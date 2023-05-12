@@ -65,7 +65,7 @@ export default function Card({ description }) {
         </div>
         <div className="card-buttons">
           <Link to={`/description/${description.id}`}>
-            <button onClick={handleLetsGo}>Let’s go !</button>
+            <button onClick={handleLetsGo}>Détails</button>
           </Link>
           <button
             type="button"

@@ -66,7 +66,7 @@ const Login = () => {
           </div>
         </form>
         <img src={Bag} alt="bag" className="BagPicture" />
-        <p className="paragraph">The world is yours!</p>
+        <p className="paragraph">Le monde a porté de main</p>
       </div>
     </div>
   );
