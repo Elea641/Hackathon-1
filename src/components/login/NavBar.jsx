@@ -13,16 +13,13 @@ const NavBar = () => {
           <div className="LogoDiv">
             <img className="logo" src={Logo} alt="logo" />
           </div>
+          <a href="/" className="NavLink">
           <h4 className="title">Travel'Earth</h4>
+          </a>
         </div>
       </div>
 
       <ul className="Nav_Links">
-        <li>
-          <a href="/" className="NavLink">
-            Accueil
-          </a>
-        </li>
         <li>
           <a href="/localisations" className="NavLink">
             Localisations
@@ -31,16 +28,6 @@ const NavBar = () => {
         <li>
           <a href="/favorite" className="NavLink">
             Favoris
-          </a>
-        </li>
-        <li>
-          <a href="/profil" className="NavLink">
-            Profil
-          </a>
-        </li>
-        <li>
-          <a href="/" className="NavLink">
-            À propos
           </a>
         </li>
         <li>
