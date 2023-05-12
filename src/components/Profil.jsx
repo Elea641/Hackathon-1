@@ -12,6 +12,7 @@ const Profil = () => {
         </h1>
         <img src={user[0].imgUrl} />
         <br />
+        <h2>Description :</h2>
         <p>{user[0].description}</p>
       </section>
     </>

@@ -24,6 +24,11 @@
         margin: 0.3rem 1rem 0 0.5rem;
       }
     }
+
+    a {
+      text-decoration: none;
+    }
+
     .title {
       font-family: "Orbitron", sans-serif;
       margin: 0 0 0 0.2rem;
@@ -48,18 +53,20 @@
     visibility: visible;
     .LoginLogo {
       width: 4vw;
+      margin-right: 0.5rem;
     }
     .LogoutLogo {
       width: 5vw;
       margin-top: 0.4rem;
       border-radius: 50%;
+      margin-right: 0.5rem;
     }
 
     .NavLink {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0.5rem;
+      padding: 0.2rem;
       font-size: 20px;
       position: relative;
       color: blanchedalmond;
