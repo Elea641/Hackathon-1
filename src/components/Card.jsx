@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Card({ description }) {
   const [isFavorited, setIsFavorited] = useState(false);
 
   const toggleFavorite = () => {
     setIsFavorited(!isFavorited);
+    localStorage.setItem("isFavorited", !isFavorited);
+
     const favoritesList = JSON.parse(localStorage.getItem("favorites")) || [];
 
     if (!isFavorited) {
@@ -21,6 +23,11 @@ export default function Card({ description }) {
       }
     }
   };
+
+  useEffect(() => {
+    const savedIsFavorited = JSON.parse(localStorage.getItem("isFavorited"));
+    setIsFavorited(savedIsFavorited || false);
+  }, []);
 
   function handleLetsGo() {
     console.log("Let’s go !");
@@ -72,8 +79,3 @@ export default function Card({ description }) {
     </div>
   );
 }
-
-
-
-
-
