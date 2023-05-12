@@ -33,6 +33,7 @@ const router = createBrowserRouter([
   {
     path: `/localisations`,
     element: <LocalisationsSearch />,
+
   },
   {
     path: `/profil`,
@@ -41,6 +42,7 @@ const router = createBrowserRouter([
   {
     path: `/favorite`,
     element: <FavoritePage />,
+
   },
 ]);
 
